@@ -5,6 +5,8 @@ import java.util.LinkedList;
 
 public class ReadFilesInFolder {
     public static void readFilesDir(String path){
+
+        //
         LinkedList<File> Dirlist = new LinkedList<File>();
         LinkedList<String> Filelist = new LinkedList<String>();
         File dir = new File(path);
@@ -36,7 +38,6 @@ public class ReadFilesInFolder {
                     }
                 }
             }else{
-                //处理文件内容,虽然这种情况好像不会发生
                 System.out.println("-------------");
             }
         }

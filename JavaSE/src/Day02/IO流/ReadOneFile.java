@@ -11,7 +11,6 @@ public class ReadOneFile {
         try {
             br = new BufferedReader(new FileReader(file));
             while(br.ready()){
-                //这里可以作相关的处理过程 #todo your code#
                 res.append(br.readLine() + "\n");
             }
             br.close();
