@@ -1,0 +1,42 @@
+List集合是有序的，Developer可对其中每个元素的插入位置进行精确地控制，可以通过索引来访问元素，遍历元素。
+常用ArrayList和LinkedList两个类
+ArrayList底层通过数组实现，随着元素的增加而 动态 扩容。
+    继承于AbstractList，实现了List(集合框架基础功能),
+                           RandomAccess(获得了快速随机访问存储元素的功能),
+                           Cloneable(得到了clone()方法，可以实现克隆功能),
+                           Serializable(表示可以被序列化，通过序列化去传输，典型的应用就是hessian协议)接口。
+    特点
+        容量不固定，随着容量的增加而动态扩容（阈值基本不会达到）
+        有序集合（插入的顺序==输出的顺序）
+        插入的元素可以为null
+        增删改查效率更高（相对于LinkedList来说）
+        线程不安全
+
+LinkedList底层通过链表来实现，随着元素的增加不断向链表的后端增加节点。
+LinkedList是一个双向链表，每一个节点都拥有指向前后节点的引用。相比于ArrayList来说，LinkedList的随机访问效率更低。
+（实现了Queue接口，可以当成Queue使用！）
+继承AbstractSequentialList，实现了List,
+                                Deque(Deque 双向队列，也就是既可以先入先出，又可以先入后出，即可以在头部添加元素，也可以在尾部添加元素),
+                                Cloneable,
+                                Serializable接口。
+
+常用方法
+    增删改查
+        增一个元素；在特定位置增加元素；向集合中添加一个集合的元素；
+        add(E e); add(int i, E e); addAll(Collection<? extends E> c);
+        删除集合中所有元素；删除并返回指定索引对应元素；删除指定元素；从集合中删除一个集合的元素；
+        clear(); remove(int i); remove(Object o); removeAll(Collection<?> c);
+        修改并返回指定索引对应的值；
+        set(int i, E e);
+        获取指定位置的元素；获取集合中每一个元素
+        get(int i); Iterator iterator();
+    判断，长度，转换数组
+        判空；判存在；判集合中是否存在指定集合的元素；
+        isEmpty(); contains(Object o); containsAll(Collection<?> c);
+        获取集合中元素个数
+        size();
+        集合->数组
+        Object[] toArray();
+
+
+
