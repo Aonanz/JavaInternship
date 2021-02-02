@@ -1,6 +1,4 @@
-package Day01.集合框架.Collection.List.LinkedList;
-
-import java.util.List;
+package Day02.集合框架.Collection.List.LinkedList;
 
 public class ReturnKthNode {
 

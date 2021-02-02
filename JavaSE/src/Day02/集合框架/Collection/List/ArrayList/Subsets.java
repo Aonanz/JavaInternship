@@ -1,4 +1,4 @@
-package Day01.集合框架.Collection.List.ArrayList;
+package Day02.集合框架.Collection.List.ArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
