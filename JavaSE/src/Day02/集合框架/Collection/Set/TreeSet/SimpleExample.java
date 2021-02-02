@@ -2,8 +2,8 @@ package Day02.集合框架.Collection.Set.TreeSet;
 
 import java.util.*;
 
+// 顺便加了三序遍历
 public class SimpleExample {
-
 
     public static void main(String[] args) {
         TreeSet set = new TreeSet();
