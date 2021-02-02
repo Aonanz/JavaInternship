@@ -1,0 +1,21 @@
+两者都继承自java.lang.Throwable类
+Exception：
+1．可以是可被控制(checked) 或不可控制的(unchecked)。
+2．表示一个由程序员导致的错误。
+3．应该在应用程序级被处理。
+
+Error：
+1．总是不可控制的(unchecked)。
+2．经常用来用于表示系统错误或低层资源的错误。
+3．如何可能的话，应该在系统级被捕捉。
+
+checked:是Exception的子类，向上抛出机制，子类生A异常则父类必须跑出A异常。
+        编译器强制开发者进行处理此类异常，使程序能提前预料掉以至于不崩。(try catch)
+unchecked:是RuntimException的子类，代码逻辑错误造成(NullPointerException)，
+          或编译器无法进行检测，开发者难以预料到的异常(OutOfMemoryError）。
+
+异常补货逻辑
+    关键字：try catch finally throw（语句抛出一个异常）
+                            throws（方法可能抛出异常的声明）
+    在 catch 块中捕获的异常，必须在 try 块中有出现这种异常的可能性。(否则编译失败)
+
