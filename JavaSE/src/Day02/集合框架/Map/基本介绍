@@ -1,3 +1,29 @@
 Map是一种依照键（key）存储元素的容器，键（key）很像下标，在List中下标是整数。
 在Map中键（key）可以使任意类型的对象。Map中不能有重复的键（Key），每个键（key）都有一个对应的值（value）。
 一个键（key）和它对应的值构成map集合中的一个元素。
+    Map与Collection在集合框架中属并列存在
+    Map存储的是键值对
+    Map存储元素使用put方法，Collection使用add方法
+    Map集合没有直接取出元素的方法，而是先转成Set集合，在通过迭代获取元素
+    Map集合中键要保证唯一性
+    也就是Collection是单列集合, Map 是双列集合。
+API
+    interface Map<K,V>
+    K - 此映射所维护的键的类型
+    V - 映射值的类型
+
+
+ ---| Map  接口    将键映射到值的对象。一个映射不能包含重复的键；每个键最多只能映射到一个值。
+			---| HashMap  采用哈希表实现，所以无序
+            ---| TreeMap   可以对健进行排序
+
+---|Hashtable:
+底层是哈希表数据结构，线程是同步的，不可以存入null键，null值。
+效率较低，被HashMap 替代。
+---|HashMap:
+底层是哈希表数据结构，线程是不同步的，可以存入null键，null值。
+要保证键的唯一性，需要覆盖hashCode方法，和equals方法。
+---| LinkedHashMap：
+该子类基于哈希表又融入了链表。可以Map集合进行增删提高效率。
+---|TreeMap:
+底层是二叉树数据结构。可以对map集合中的键进行排序。需要使用Comparable或者Comparator 进行比较排序。return 0，来判断键的唯一性。

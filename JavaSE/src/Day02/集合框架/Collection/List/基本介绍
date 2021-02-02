@@ -14,6 +14,7 @@ ArrayList底层通过数组实现，随着元素的增加而 动态 扩容。
 
 LinkedList底层通过链表来实现，随着元素的增加不断向链表的后端增加节点。
 LinkedList是一个双向链表，每一个节点都拥有指向前后节点的引用。相比于ArrayList来说，LinkedList的随机访问效率更低。
+（实现了Queue接口，可以当成Queue使用！）
 继承AbstractSequentialList，实现了List,
                                 Deque(Deque 双向队列，也就是既可以先入先出，又可以先入后出，即可以在头部添加元素，也可以在尾部添加元素),
                                 Cloneable,

@@ -2,3 +2,5 @@
 在具体应用中通常用链表或者数组来实现。队列只允许在后端（称为 rear）进行插入操作，在前端（称为 front）进行删除操作。
 队列的操作方式和堆栈类似，唯一的区别在于队列只允许新数据在后端进行添加。
 队列常用的方法有：add、remove、element、offer、poll、peek、put、take。
+               避免使用add，remove，以offer，poll来代替
+                    优点是通过返回值可以判断成功与否，add()和remove()方法在失败的时候会抛出异常。
