@@ -21,12 +21,21 @@ LinkedList是一个双向链表，每一个节点都拥有指向前后节点的�
 
 常用方法
     增删改查
-    add(E e); add(int i, E e); addAll(Collection<? extends E> c);
-    clear(); remove(int i); remove(Object o); removeAll(Collection<?> c);
-    set(int i, E e);
-    get(int i); Iterator iterator();
+        增一个元素；在特定位置增加元素；向集合中添加一个集合的元素；
+        add(E e); add(int i, E e); addAll(Collection<? extends E> c);
+        删除集合中所有元素；删除并返回指定索引对应元素；删除指定元素；从集合中删除一个集合的元素；
+        clear(); remove(int i); remove(Object o); removeAll(Collection<?> c);
+        修改并返回指定索引对应的值；
+        set(int i, E e);
+        获取指定位置的元素；获取集合中每一个元素
+        get(int i); Iterator iterator();
     判断，长度，转换数组
-    isEmpty(); contains(Object o); containsAll
+        判空；判存在；判集合中是否存在指定集合的元素；
+        isEmpty(); contains(Object o); containsAll(Collection<?> c);
+        获取集合中元素个数
+        size();
+        集合->数组
+        Object[] toArray();
 
 
 
