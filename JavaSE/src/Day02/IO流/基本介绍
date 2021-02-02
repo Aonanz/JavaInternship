@@ -1,0 +1,32 @@
+常用
+    --字节流
+        OutputStream
+        InputStream
+
+    --字符流
+        Reader
+        Writer
+
+某些场景需要
+    --节点流
+        CharArrayReader, Writer, FileInputStream, OutputStream
+        StringReader, Writer
+        PipedOutputStream
+        FileInputStream, OutputStream
+
+    --处理流
+        buffer
+            bufferInputStream
+            bufferOutputStream
+        data
+            DataInputStream
+            DataOutputStream
+        转换流
+            InputStreamReader
+            OutputStreamReader
+        Filter
+            四个
+        Object流
+        print
+            PrintWriter
+            PrintStream
