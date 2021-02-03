@@ -1,7 +1,7 @@
-package com.Hiyadeus.lesson05;
+package Day03.JDBC.src.com.Hiyadeus.lesson05;
 
-import com.Hiyadeus.lesson02.utils.JdbcUtils;
-import com.Hiyadeus.lesson05.utils.JdbcUtils_DBCP;
+import Day03.JDBC.src.com.Hiyadeus.lesson02.utils.JdbcUtils;
+import Day03.JDBC.src.com.Hiyadeus.lesson05.utils.JdbcUtils_DBCP;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

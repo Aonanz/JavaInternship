@@ -1,6 +1,6 @@
-package com.Hiyadeus.lesson02;
+package Day03.JDBC.src.com.Hiyadeus.lesson02;
 
-import com.Hiyadeus.lesson02.utils.JdbcUtils;
+import Day03.JDBC.src.com.Hiyadeus.lesson02.utils.JdbcUtils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -18,7 +18,7 @@ public class TestInsert {
             connection = JdbcUtils.getConnection(); // 获取数据库连接
             st = connection.createStatement();
             String sql = "INSERT INTO users(id,`NAME`,`PASSWORD`,`email`,`birthday`)" +
-                    "VALUES(4,'Hiyadeus','brainmachine2018','947@q.c','2021-01-20')";
+                    "VALUES(6,'Hiyadeus','brainmachine2018','947@q.c','2021-01-20')";
             int i = st.executeUpdate(sql);
             if(i > 0) {
                 System.out.println("插入成功！");

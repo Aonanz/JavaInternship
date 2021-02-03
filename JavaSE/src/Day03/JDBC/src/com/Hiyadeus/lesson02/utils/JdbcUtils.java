@@ -1,4 +1,4 @@
-package com.Hiyadeus.lesson02.utils;
+package Day03.JDBC.src.com.Hiyadeus.lesson02.utils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,8 +13,8 @@ public class JdbcUtils {
     private static String password = null;
 
     static {
-        try{
-            InputStream in = JdbcUtils.class.getClassLoader().getResourceAsStream("db.properties");
+        try {
+            InputStream in = JdbcUtils.class.getClassLoader().getResourceAsStream("Day03/JDBC/src/db.properties");
             Properties properties = new Properties();
             properties.load(in);
 
@@ -31,30 +31,30 @@ public class JdbcUtils {
     }
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(url,username,password);
+        return DriverManager.getConnection(url, username, password);
     }
 
-    public static void release(Connection conn, Statement st, ResultSet rs){
+    public static void release(Connection conn, Statement st, ResultSet rs) {
         close(conn, st, rs);
     }
 
     public static void close(Connection conn, Statement st, ResultSet rs) {
-        if(rs!=null){
-            try{
+        if (rs != null) {
+            try {
                 rs.close();
-            }catch (SQLException e){
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        if(st!=null){
-            try{
+        if (st != null) {
+            try {
                 st.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        if(conn!=null){
-            try{
+        if (conn != null) {
+            try {
                 conn.close();
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -62,3 +62,4 @@ public class JdbcUtils {
         }
     }
 }
+

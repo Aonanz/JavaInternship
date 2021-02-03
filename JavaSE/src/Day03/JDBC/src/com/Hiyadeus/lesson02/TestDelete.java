@@ -1,6 +1,6 @@
-package com.Hiyadeus.lesson02;
+package Day03.JDBC.src.com.Hiyadeus.lesson02;
 
-import com.Hiyadeus.lesson02.utils.JdbcUtils;
+import Day03.JDBC.src.com.Hiyadeus.lesson02.utils.JdbcUtils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

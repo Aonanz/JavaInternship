@@ -1,6 +1,6 @@
-package com.Hiyadeus.lesson05.utils;
+package Day03.JDBC.src.com.Hiyadeus.lesson05.utils;
 
-import com.Hiyadeus.lesson02.utils.JdbcUtils;
+import Day03.JDBC.src.com.Hiyadeus.lesson02.utils.JdbcUtils;
 import org.apache.commons.dbcp2.BasicDataSourceFactory;
 
 import javax.sql.DataSource;
@@ -14,7 +14,7 @@ public class JdbcUtils_DBCP {
 
     static {
         try{
-            InputStream in = JdbcUtils_DBCP.class.getClassLoader().getResourceAsStream("dbcpconfig.properties");
+            InputStream in = JdbcUtils_DBCP.class.getClassLoader().getResourceAsStream("Day03/JDBC/src/dbcpconfig.properties");
             Properties properties = new Properties();
             properties.load(in);
 
