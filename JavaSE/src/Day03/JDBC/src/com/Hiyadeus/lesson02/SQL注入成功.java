@@ -1,34 +1,30 @@
-package Day03.JDBC.src.com.Hiyadeus.lesson03;
+package Day03.JDBC.src.com.Hiyadeus.lesson02;
 
 import Day03.JDBC.src.com.Hiyadeus.lesson02.utils.JdbcUtils;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
-public class SQL注入 {
+public class SQL注入成功 {
     public static void main(String[] args) {
-        // login(" 'or '1=1", " 'or '1=1");
-        login("Hiyadeus", "123456");
+        login(" 'or '1=1", " 'or '1=1");
     }
 
     // 登录业务
     public static void login(String username, String password) {
 
         Connection connection = null;
-        PreparedStatement st = null;
+        Statement st = null;
         ResultSet rs = null;
 
         try{
             connection = JdbcUtils.getConnection(); // 获取数据库连接
-            String sql = "select * from users where `NAME` =? and `password` = ?";
+            st = connection.createStatement();
+            String sql = "select * from users where `NAME` ='"+username+"' and `password` = '"+password+"'";
 
-            st = connection.prepareStatement(sql);
-            st.setString(1,username);
-            st.setString(2,password);
-
-            rs = st.executeQuery();
+            rs = st.executeQuery(sql);
             while(rs.next()){
                 System.out.println(rs.getString("NAME"));
                 System.out.println(rs.getString("PASSWORD"));
