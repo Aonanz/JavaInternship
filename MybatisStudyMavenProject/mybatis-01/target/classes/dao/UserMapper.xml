@@ -8,11 +8,15 @@
     <select id="getUserList" resultType="pojo.User">
         select * from mybatis.user
     </select>
-    <select id="getUserId" parameterType="int" resultType="pojo.User">
+
+    <select id="getUserById" parameterType="int" resultType="pojo.User">
         select * from mybatis.user where id = #{id}
     </select>
     <insert id="addUser" parameterType="pojo.User">
         insert into mybatis.user (id, name, pwd) value (#{id},#{name},#{pwd});
+    </insert>
+    <insert id="addUser2" parameterType="pojo.User">
+        insert into mybatis.user (id, name, pwd) value (#{userid},#{userName},#{passWord});
     </insert>
     <update id="updateUser" parameterType="pojo.User">
         update mybatis.user

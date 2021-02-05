@@ -4,7 +4,9 @@ import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import pojo.User;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class UserDaoTest {
     private Object MybatisUtils;
@@ -50,6 +52,25 @@ public class UserDaoTest {
         // 必须要提交事务才能成功！
         sqlSession.commit();
 
+        sqlSession.close();
+    }
+
+    @Test
+    public void addUser2(){
+        SqlSession sqlSession = utils.MybatisUtils.getSqlSession();
+
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+
+
+        Map<String, Object> map = new HashMap<String, Object>();
+
+        map.put("userid",6);
+        map.put("passWord","2222333");
+
+        mapper.addUser2(map);
+
+
+        sqlSession.commit();
         sqlSession.close();
     }
 
