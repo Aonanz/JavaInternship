@@ -1,6 +1,9 @@
 package pojo;
 
+import lombok.Data;
+
 //实体类
+@Data
 public class User {
     private int id;
     private String name;

@@ -9,7 +9,7 @@ public interface UserMapper {
 
     List<User> getUserLike(String value);
 
-
+    List<User> selectUser();
 
     //查询全部用户
     List<User> getUserList();
