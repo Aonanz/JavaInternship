@@ -10,7 +10,7 @@
     </select>
 
     <select id="getUserById" parameterType="int" resultType="pojo.User">
-        select * from mybatis.user where id = #{id}
+        select * from mybatis.user where id = #{id};
     </select>
     <select id="selectUser" resultType="pojo.User">
         select * from mybatis.user;
@@ -33,4 +33,9 @@
         delete from mybatis.user
         where id = #{id};
     </delete>
+
+    <select id="login" parameterType="pojo.User">
+        select * from mybatis.user where name=#{name} and pwd=#{pwd};
+    </select>
+
 </mapper>

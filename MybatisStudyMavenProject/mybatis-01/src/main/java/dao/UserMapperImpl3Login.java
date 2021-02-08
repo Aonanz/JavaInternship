@@ -1,13 +1,18 @@
 package dao;
 
-import org.apache.ibatis.session.SqlSession;
-import org.mybatis.spring.support.SqlSessionDaoSupport;
+import org.mybatis.spring.SqlSessionTemplate;
 import pojo.User;
 
 import java.util.List;
 import java.util.Map;
 
-public class UserMapperImpl2 extends SqlSessionDaoSupport implements UserMapper {
+public class UserMapperImpl3Login implements UserMapper{
+
+    private SqlSessionTemplate sqlSessionTemplate;
+
+    public void setSqlSessionTemplate(SqlSessionTemplate sqlSessionTemplate) {
+        this.sqlSessionTemplate = sqlSessionTemplate;
+    }
 
     @Override
     public List<User> getUserLike(String value) {
@@ -16,9 +21,8 @@ public class UserMapperImpl2 extends SqlSessionDaoSupport implements UserMapper 
 
     @Override
     public List<User> selectUser() {
-        SqlSession sqlSession = getSqlSession();
-        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
-        return mapper.selectUser();
+        UserMapper userMapper = sqlSessionTemplate.getMapper(UserMapper.class);
+        return userMapper.selectUser();
     }
 
     @Override
@@ -58,7 +62,16 @@ public class UserMapperImpl2 extends SqlSessionDaoSupport implements UserMapper 
 
     @Override
     public User login(User user) {
-        System.out.println(-2);
-        return null;
+
+        UserMapper userMapper = sqlSessionTemplate.getMapper(UserMapper.class);
+        return userMapper.login(user);
+
+//        if (user == null)
+//            return "insufficient content";
+//
+//        String loginName = user.getName();
+//        String loginPwd = user.getPwd();
+//
+//        return "insufficient content!";
     }
 }

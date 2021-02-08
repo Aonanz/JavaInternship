@@ -1,5 +1,6 @@
 package dao;
 
+import org.apache.ibatis.annotations.Select;
 import pojo.User;
 
 import java.util.List;
@@ -25,11 +26,15 @@ public interface UserMapper {
     //万能的Map
     int addUser2(Map<String,Object> map);
 
-
     //修改用户
     int updateUser(User user);
 
     //删除一个用户
     int deleteUser(int id);
+
+    //用户登录
+//    @Select("select * from user where name = #{name} and pwd = #{pwd}")
+    User login(User user);
+
 }
 

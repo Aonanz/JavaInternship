@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--    扫描service下面所有的类-->
+    <context:component-scan base-package="service"></context:component-scan>
+    <import resource="spring-dao.xml"/>
+<!--    <context:property-placeholder location="db.properties"></context:property-placeholder>-->
+    <!--    加载工厂类，生产session的工厂类,把数据库配置注入到工厂类中-->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!--    把所有的mapper中的接口都交给Spring管理-->
+<!--    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+<!--        <property name="basePackage" value="dao"></property>-->
+<!--    </bean>-->
+    <bean id="serviceImpl" class="service.ServiceImpl">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+</beans>

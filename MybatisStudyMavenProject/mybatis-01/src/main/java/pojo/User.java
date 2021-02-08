@@ -1,15 +1,20 @@
 package pojo;
 
+
+
 import lombok.Data;
+
+import java.io.Serializable;
 
 //实体类
 @Data
-public class User {
+public class User implements Serializable {
     private int id;
     private String name;
     private String pwd;
 
     public User() {
+
     }
 
     public User(int id, String name, String pwd) {

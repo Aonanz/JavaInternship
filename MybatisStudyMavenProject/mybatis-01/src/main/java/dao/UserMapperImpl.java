@@ -58,4 +58,14 @@ public class UserMapperImpl implements UserMapper{
     public int deleteUser(int id) {
         return 0;
     }
+
+    @Override
+    public User login(User user) {
+//        System.out.println(-1);
+//        User use = new User();
+//        user.setName("jack");
+//        user.setPwd("123456");
+//        return use;
+        return null;
+    }
 }

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="695e4b62-4cbb-4a2e-bb12-1a56269f84d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Login/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Login/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Login/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Login/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Login/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Login/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Login/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Login/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Login/lib/javax.transaction.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/dao/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/dao/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/dao/UserMapperImpl2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/dao/UserMapperImpl2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/java/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/test/java/dao/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/src/test/java/dao/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/dao/UserMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/dao/UserMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/dao/UserMapperImpl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/dao/UserMapperImpl2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/classes/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/test-classes/dao/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisStudyMavenProject/mybatis-01/target/test-classes/dao/MyTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1o6GpijdYrQjFSRdnxE7wy7pGaf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="695e4b62-4cbb-4a2e-bb12-1a56269f84d8" name="Default Changelist" comment="" />
+      <created>1612599811290</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612599811290</updated>
+      <workItem from="1612599812935" duration="1034000" />
+      <workItem from="1612600864343" duration="704000" />
+      <workItem from="1612603640301" duration="2163000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

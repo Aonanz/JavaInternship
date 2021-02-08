@@ -15,4 +15,8 @@
     <bean id="userMapper2" class="dao.UserMapperImpl2">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
+<!--    <bean id="serviceImpl" class="service.ServiceImpl">-->
+<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>-->
+<!--    </bean>-->
+
 </beans>
